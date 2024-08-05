@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="img/icon1.png">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Home -CIBO</title>
+  <style>
+    .recipe-card {
+      margin: 15px;
+      text-align: center;
+    }
+    .recipe-card img {
+      width: 100%;
+      height: auto;
+    }
+    
+.hero2 {
+    text-align: center;
+    background: #E6E6FA;
+    color: black;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+
+.hero2 h2 {
+    margin-bottom: 10px;
+}
+
+.hero2 p {
+    font-size: 18px;
+}
+.sec-01{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #111222;
+    background-color: lightcyan;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    position: relative;
+    width: 1150px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden; 
+}
+ 
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+    
+
+}
+
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+<header>
+  <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
+    <img src="img/19.png" alt="Logo" width="80px" height="80px">
+  </a>
+  <h3 class="sublogo">- Where Every Recipe Tells a Story -</h3>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="register.php">Register</a>
+    <a href="login.php" class="btnLogin-popup">Login</a>  
+  </div>
+</header>
+<section class="home" id="section1">
+  <div class="content">
+    <h2>Discover, Create, Share Recipes</h2>
+    <p>Welcome to Cibo, your ultimate culinary companion where you can discover, create, and share delicious recipes from around the globe. Whether you're a seasoned chef or a kitchen novice, Cibo offers a platform to explore a world of flavors, create culinary masterpieces, and share your favorite recipes with friends and fellow food enthusiasts. Join our community today and embark on a flavorful journey of cooking and sharing memories one recipe at a time.</p>
+    <a href="register.php" style="margin-left: 150px;">Get Started</a>
+  </div>
+</section>
+<main>
+  <section class="hero">
+    <h2>Find Your Favorite Recipes</h2>
+    <p>Explore a variety of recipes from around the world and find new favorites.</p>
+  </section>
+  
+  <section class="featured-recipes">
+    <h2>Featured Recipes</h2>
+    <div class="container">
+      <div class="recipe-card">
+        <img src="img/2.jpeg" alt="Delicious Pasta">
+        <h3>Delicious Pasta</h3>
+        <p>A simple and tasty pasta recipe for any occasion.</p>
+        <a href="pasta.php" class="btn">View Recipe</a>
+      </div>
+      
+      <div class="recipe-card">
+        <img src="img/3.jpg" alt="Recipe 2">
+        <h3>Spicy Tacos</h3>
+        <p>Try these flavorful tacos with a spicy kick.</p>
+        <a href="taco.php">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="img/6.jpg" alt="Recipe 3">
+        <h3>Garlic Chicken</h3>
+        <p>Enjoy this creamy garlic chicken that melts in your mouth.</p>
+        <a href="chicken.php">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="img/7.jpg" alt="Recipe 4">
+        <h3>Vege Stir-Fry</h3>
+        <p>A quick and healthy vegetable stir-fry for a nutritious meal.</p>
+        <a href="vege.php">View Recipe</a>
+      </div>
+    </div>
+  </section>
+  <section class="hero2">
+    <h2>Lankan Favorites</h2>
+    <p>Journey Through Sri Lankan Culinary Treasures.</p>
+  </section>
+  <section class="featured-recipes">
+    <h2>Sri Lankan Flavors</h2>
+    <div class="container">
+      <div class="recipe-card">
+        <img src="img/15.jpg" alt="Recipe 5">
+        <h3>Rice and Curry</h3>
+        <p>A Symphony of Sri Lankan Flavors in Every Bite.</p>
+        <a href="rice.php" class="btn">View Recipe</a>
+      </div>
+      
+      <div class="recipe-card">
+        <img src="img/16.jpg" alt="Recipe 6">
+        <h3>Kottu Roti</h3>
+        <p>An irresistible Stir-Fried Delight That will make you yearn.</p>
+        <a href="roti.php">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="img/17.jpg" alt="Recipe 7">
+        <h3>Pittu</h3>
+        <p>A Hearty Sri Lankan Favorite with a Fluffy Texture.</p>
+        <a href="pittu.php">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="img/18.jpg" alt="Recipe 8">
+        <h3>String Hoppers</h3>
+        <p>Delicate Rice Noodles for a Taste of Tradition.</p>
+        <a href="string.php">View Recipe</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 powered by Sajjad. All Rights Reserved.</p>
+  </footer>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</body>
+
+</html>
