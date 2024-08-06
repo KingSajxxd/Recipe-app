@@ -38,10 +38,7 @@ $result = $stmt->get_result();
 if ($result->num_rows === 1) {
     $user = $result->fetch_assoc();
     // Display the entered and stored passwords for debugging
-    echo "<div style='margin: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;'>";
-    echo "<p style='color: red;'>Entered Password: <strong>" . htmlspecialchars($pass) . "</strong></p>";
-    echo "<p style='color: blue;'>Stored Password: <strong>" . htmlspecialchars($user['password']) . "</strong></p>";
-    echo "</div>";
+    
 
     // Verify the password
     if ($user['password'] === $pass) {
@@ -52,15 +49,15 @@ if ($result->num_rows === 1) {
         exit();
     } else {
         // Invalid password
-        echo "<p style='color: red;'>Invalid password</p>"; // For debugging purposes
-        // header("Location: login.php?error=invalid_password");
-        // exit();
+        //echo "<p style='color: red;'>Invalid password</p>"; // For debugging purposes
+        header("Location: login.php?error=invalid_password");
+        exit();
     }
 } else {
     // Invalid email or user does not exist
-    echo "<p style='color: red;'>Invalid email or user does not exist</p>"; // For debugging purposes
-    // header("Location: login.php?error=invalid_email");
-    // exit();
+    //echo "<p style='color: red;'>Invalid email or user does not exist</p>"; // For debugging purposes
+    header("Location: login.php?error=invalid_email");
+    exit();
 }
 
 // Close the database connection
