@@ -56,7 +56,9 @@ $result = $conn->query($sql);
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="register.php">Register</a>
-    <a href="login.php" class="btnLogin-popup">Login</a>  
+    <form action="logout.php" method="POST">
+    <button type="submit" class="btnLogin-popup">Logout</button>
+     </form>
   </div>
 </header>
     <div class="container " style="margin-top: 200px;">
