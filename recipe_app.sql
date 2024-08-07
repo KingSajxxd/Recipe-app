@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 06, 2024 at 06:49 PM
+-- Generation Time: Aug 07, 2024 at 06:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -38,16 +38,6 @@ CREATE TABLE `recipes` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `recipes`
---
-
-INSERT INTO `recipes` (`id`, `title`, `description`, `ingredients`, `instructions`, `image`, `user_id`, `created_at`) VALUES
-(8, 'sccsacsaa', 'ASCCSAASCAcs', 'acsasasaS', 'ACSCAsSCASCcS', 'istockphoto-1622750773-170667a.jpg', 4, '2024-08-05 18:09:14'),
-(9, 'casacsac', 'ascsca', 'scasca', 'csascacsa', 'dl.beatsnoop.com-3000-Rs3dT50Mpj.jpg', 4, '2024-08-05 18:10:00'),
-(10, 'csascacsa', 'csascasacsc', 'ascscsa', 'casscacsac', 'istockphoto-1622750773-170667a.jpg', 4, '2024-08-05 18:10:10'),
-(11, 'scascasca', 'csasca', 'sasccsa', 'csascasc', 'dl.beatsnoop.com-3000-Rs3dT50Mpj.jpg', 4, '2024-08-05 18:10:34');
-
 -- --------------------------------------------------------
 
 --
@@ -62,15 +52,6 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `email`, `first_name`, `last_name`, `password`, `created_at`) VALUES
-(4, 'sajaiyoob03@gmail.com', 'fvdbdfb', 'bdf', 'Jv77Fhfy', '2024-08-05 18:07:30'),
-(5, 'saja@gmail', 'csacsa', 'scsac', '8A1pOjLo', '2024-08-05 18:11:35'),
-(6, 'rashidhussain7@yahoo.com', 'fvdbdfb', 'bdf', 'lMtsKvRz', '2024-08-06 16:48:12');
 
 --
 -- Indexes for dumped tables
@@ -98,13 +79,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `recipes`
 --
 ALTER TABLE `recipes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

@@ -43,6 +43,25 @@ $result = $conn->query($sql);
         body{
             background-color: lavenderblush;
         }
+        .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: wheat;
+    border: 2px wheat;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;    ;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s ease;
+
+}
+.btnLogin-popup:hover {
+    background: red;
+    color: black;
+}
   </style>
   
 </head>
