@@ -86,33 +86,7 @@
       </div>
     </div>
   </main>
-  <main>
-  <div class="container" style="margin-top: 50px; margin-bottom: 100px;">
-    <!-- Recipe details, user actions, etc. -->
-    <div class="recipe-details">
-      <h2>Recipe Title</h2>
-      <img src="img/recipe-image.jpg" alt="Recipe Image">
-      <p><strong>Description:</strong> Recipe description here.</p>
-      <h3>Ingredients:</h3>
-      <ul>
-        <!-- Ingredients list -->
-        <li>Ingredient 1</li>
-        <li>Ingredient 2</li>
-      </ul>
-      <h3>Instructions:</h3>
-      <ol>
-        <!-- Instructions list -->
-        <li>Step 1</li>
-        <li>Step 2</li>
-      </ol>
-      <p>
-        <a href="index.html" class="btn-custom">&larr; Back to Home</a>
-        <!-- Or other relevant links -->
-        <a href="add_recipe.html" class="btn-custom">Add New Recipe</a>
-      </p>
-    </div>
-  </div>
-</main>
+  
 
   
   <footer>
