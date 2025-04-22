@@ -43,7 +43,7 @@ $result = $stmt->get_result();
     .btnLogin-popup {
       width: 130px;
       height: 50px;
-      background: white;
+      background: wheat;
       border: 2px wheat;
       outline: none;
       border-radius: 6px;
